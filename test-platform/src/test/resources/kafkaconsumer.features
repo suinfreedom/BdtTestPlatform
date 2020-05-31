@@ -1,0 +1,6 @@
+Feature: il consumer consuma e deserializza correttamente il messaggio che riceve
+
+  Scenario: viene inviato un messaggio json
+    When invio
+    Then consuma
+

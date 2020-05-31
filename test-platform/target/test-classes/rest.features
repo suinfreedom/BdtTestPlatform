@@ -1,0 +1,5 @@
+Feature: la versione puo' essere recuperata
+
+  Scenario: il client chiama il controller di test rest-service-test
+    When il client chiama /version
+    Then il client riceve la versione 1.0
