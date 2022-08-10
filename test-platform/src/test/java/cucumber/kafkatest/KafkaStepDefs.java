@@ -6,9 +6,6 @@ import cucumber.api.java.en.When;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import springcucumbertemplate.Application;
-import springcucumbertemplate.simpletotest.SimpleStringReturn;
-
-import static org.hamcrest.MatcherAssert.assertThat;
 
 public class KafkaStepDefs extends CucumberKafkaIntegrationTest {
 
@@ -18,16 +15,17 @@ public class KafkaStepDefs extends CucumberKafkaIntegrationTest {
     String returnStr;
 
 
-    @When("^invio$")
+    @When("^invio il messaggio \"([^\"]*)\"$")
     public void viene_inviato_un_messaggio() {
 
     }
 
-
-    @Then("^consuma$")
+    @Then("^consuma il messaggio$")
     public void consuma_il_messaggio() {
 //        assertThat("il messaggio è stato ricevuto e deserializzato: ", returnStr.equals());
     }
+
+
 
 
 }

@@ -1,4 +1,4 @@
-Feature: la versione puo' essere recuperata
+Feature: Viene interrogato il servizio di test
 
   Scenario: il client chiama il controller di test rest-service-test
     When il client chiama /version
